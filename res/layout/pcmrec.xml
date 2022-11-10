@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+
+    <TabHost android:layout_weight="0.3" android:id="@android:id/tabhost" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:id="@+id/linearLayout7" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical">
+            <TabWidget android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@android:id/tabs"></TabWidget>
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@android:id/tabcontent">
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@+id/tab1" android:orientation="vertical">
+                
+                    <LinearLayout android:layout_height="wrap_content" android:id="@+id/linearLayout1" android:layout_width="fill_parent" android:orientation="vertical" android:layout_weight="0.3"></LinearLayout>
+					    <LinearLayout android:layout_height="wrap_content" android:id="@+id/linearLayout2" android:layout_width="fill_parent" android:orientation="vertical" android:layout_weight="0.3">
+					        <FrameLayout android:id="@+id/frameLayout1" android:layout_height="wrap_content" android:layout_width="fill_parent" android:background="@drawable/timer_bk" android:layout_marginLeft="20dip" android:layout_marginRight="20dip" android:layout_marginBottom="20dip">
+					        	<Chronometer android:text="Chronometer" android:id="@+id/recChronometer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_gravity="center_vertical|center_horizontal" android:textColor="#111111" android:textSize="30sp"></Chronometer>
+					<!--         	
+					            <TextView android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="00:00:00" android:layout_width="wrap_content" android:layout_gravity="center_vertical|center_horizontal" android:textColor="#111111" android:textSize="30sp" android:id="@+id/textChronometer"></TextView>
+					 -->            
+					        </FrameLayout>
+					        <LinearLayout android:layout_height="wrap_content" android:id="@+id/linearLayout4" android:layout_width="fill_parent">
+					            <LinearLayout android:layout_height="fill_parent" android:id="@+id/linearLayout5" android:layout_width="wrap_content" android:layout_weight="0.3" android:orientation="vertical">
+					                <ToggleButton android:layout_height="wrap_content" android:layout_weight="0.3" android:text="ToggleButton" android:layout_width="wrap_content" android:layout_gravity="center_horizontal" android:textOff="  " android:textOn="  " android:id="@+id/btnRec" android:background="@drawable/rec_disable"></ToggleButton>
+					                <TextView android:layout_weight="0.3" android:text="TextView" android:layout_height="wrap_content" android:id="@+id/textView2" android:layout_width="wrap_content" android:layout_gravity="center_horizontal"></TextView>
+					            </LinearLayout>
+					            <LinearLayout android:layout_height="fill_parent" android:id="@+id/linearLayout6" android:layout_width="wrap_content" android:layout_weight="0.3" android:orientation="vertical" android:visibility="gone">
+					                <ToggleButton android:layout_height="wrap_content" android:layout_weight="0.3" android:text="ToggleButton" android:layout_width="wrap_content" android:layout_gravity="center_horizontal" android:textOff="  " android:textOn="  " android:background="@drawable/pause" android:id="@+id/btnPause"></ToggleButton>
+					                <TextView android:layout_weight="0.3" android:text="TextView" android:layout_height="wrap_content" android:id="@+id/textView3" android:layout_width="wrap_content" android:layout_gravity="center_horizontal"></TextView>
+					            </LinearLayout>
+					        </LinearLayout>
+					        
+					    </LinearLayout>
+					    <LinearLayout android:layout_height="wrap_content" android:id="@+id/linearLayout3" android:layout_width="fill_parent" android:orientation="vertical" android:layout_weight="0.3">
+					    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@+id/tab2" android:orientation="vertical">
+                    <include layout="@layout/rec_play" android:layout_width="wrap_content" android:id="@+id/include1" android:layout_height="wrap_content"></include>                
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+    
+</LinearLayout>

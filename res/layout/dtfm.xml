@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:orientation="vertical" android:layout_marginLeft="5dip" android:layout_marginRight="5dip" android:layout_marginBottom="5dip" android:layout_marginTop="5dip" android:background="@drawable/back__gradient">
+
+	<ScrollView android:layout_height="fill_parent" android:layout_weight="1" android:layout_width="fill_parent" android:id="@+id/scrollVLog">
+	    <LinearLayout android:id="@+id/lines" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical">
+	    </LinearLayout>
+	</ScrollView>
+
+
+    <LinearLayout android:id="@+id/linearLayout5" android:layout_width="fill_parent" android:layout_gravity="bottom" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/title_gradient">
+    
+	    <LinearLayout android:id="@+id/linearLayout3" android:layout_height="fill_parent" android:layout_weight="0.5" android:orientation="horizontal" android:layout_width="fill_parent">
+	        <Spinner android:layout_marginRight="20dip" android:layout_height="wrap_content" android:entries="@array/stfm_modes" android:layout_weight="0.5" android:layout_width="wrap_content" android:id="@+id/spinnerDTFMMode"></Spinner>
+	        <Button android:id="@+id/btnRec" android:layout_height="wrap_content" android:text="Listen" android:layout_width="wrap_content" android:layout_weight="0.5" android:background="@drawable/button_black" android:textColor="@color/button_text_color"></Button>	    
+	    </LinearLayout>
+	    
+        <LinearLayout android:layout_width="fill_parent" android:id="@+id/linearLayout1" android:layout_gravity="bottom" android:layout_height="wrap_content" android:orientation="vertical">
+	        <LinearLayout android:layout_height="fill_parent" android:id="@+id/linearLayout2" android:layout_width="fill_parent" android:orientation="vertical">
+	            <TextView android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/textViewDTFM" android:layout_weight="1" android:background="@drawable/timer_bk" android:layout_width="fill_parent"></TextView>
+	            <EditText android:layout_weight="0.8" android:id="@+id/editTalkTextEx" android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_marginRight="20dip"></EditText>
+	            <Button android:id="@+id/btnTalk" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Speak" android:background="@drawable/button_black" android:textColor="@color/button_text_color" android:layout_gravity="right"></Button>
+	        </LinearLayout>
+	    </LinearLayout>
+	    <TableLayout android:id="@+id/tableLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.5">
+	        <TableRow android:id="@+id/tableRow1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+	            <LinearLayout android:id="@+id/linearLayout4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="horizontal">
+		            <Button android:id="@+id/button1" android:layout_height="wrap_content" android:text="1" android:layout_width="wrap_content" android:layout_weight="0.2" android:background="@drawable/button_brown_selector" android:textColor="@color/button_text_color" android:layout_margin="5dip"></Button>
+		            <Button android:id="@+id/button2" android:layout_height="wrap_content" android:text="2" android:layout_width="wrap_content" android:layout_weight="0.2" android:background="@drawable/button_brown_selector" android:textColor="@color/button_text_color" android:layout_margin="5dip"></Button>
+		            <Button android:id="@+id/button3" android:layout_height="wrap_content" android:text="3" android:layout_width="wrap_content" android:layout_weight="0.2" android:background="@drawable/button_brown_selector" android:textColor="@color/button_text_color" android:layout_margin="5dip"></Button>
+	            </LinearLayout>
+	            <LinearLayout android:id="@+id/linearLayout4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="horizontal">
+		            <Button android:id="@+id/button4" android:layout_height="wrap_content" android:text="4" android:layout_width="wrap_content" android:layout_weight="0.2" android:background="@drawable/button_brown_selector" android:textColor="@color/button_text_color" android:layout_margin="5dip"></Button>
+		            <Button android:id="@+id/button5" android:layout_height="wrap_content" android:text="5" android:layout_width="wrap_content" android:layout_weight="0.2" android:background="@drawable/button_brown_selector" android:textColor="@color/button_text_color" android:layout_margin="5dip"></Button>
+		            <Button android:id="@+id/button6" android:layout_height="wrap_content" android:text="6" android:layout_width="wrap_content" android:layout_weight="0.2" android:background="@drawable/button_brown_selector" android:textColor="@color/button_text_color" android:layout_margin="5dip"></Button>
+	            </LinearLayout>
+	        </TableRow>
+	        <TableRow android:id="@+id/tableRow2" android:layout_width="wrap_content" android:layout_height="wrap_content">
+	            <LinearLayout android:id="@+id/linearLayout4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="horizontal">
+					<Button android:id="@+id/button7" android:layout_height="wrap_content" android:text="7" android:layout_width="wrap_content" android:layout_weight="0.2" android:background="@drawable/button_brown_selector" android:textColor="@color/button_text_color" android:layout_margin="5dip"></Button>
+		            <Button android:id="@+id/button8" android:layout_height="wrap_content" android:text="8" android:layout_width="wrap_content" android:layout_weight="0.2" android:background="@drawable/button_brown_selector" android:textColor="@color/button_text_color" android:layout_margin="5dip"></Button>
+		            <Button android:id="@+id/button9" android:layout_height="wrap_content" android:text="9" android:layout_width="wrap_content" android:layout_weight="0.2" android:background="@drawable/button_brown_selector" android:textColor="@color/button_text_color" android:layout_margin="5dip"></Button>
+	            </LinearLayout>
+	            <LinearLayout android:id="@+id/linearLayout4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="horizontal">
+	            	<Button android:id="@+id/button0" android:layout_height="wrap_content" android:text="0" android:layout_width="wrap_content" android:layout_weight="0.2" android:background="@drawable/button_brown_selector" android:textColor="@color/button_text_color" android:layout_margin="5dip"></Button>
+		            <Button android:id="@+id/buttonA" android:layout_height="wrap_content" android:text="A" android:layout_width="wrap_content" android:layout_weight="0.2" android:background="@drawable/button_brown_selector" android:textColor="@color/button_text_color" android:layout_margin="5dip"></Button>
+		            <Button android:id="@+id/buttonB" android:layout_height="wrap_content" android:text="B" android:layout_width="wrap_content" android:layout_weight="0.2" android:background="@drawable/button_brown_selector" android:textColor="@color/button_text_color" android:layout_margin="5dip"></Button>
+	            </LinearLayout>	        
+	        </TableRow>
+	        <TableRow android:id="@+id/tableRow3" android:layout_width="wrap_content" android:layout_height="wrap_content">
+	            <LinearLayout android:id="@+id/linearLayout4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="horizontal">
+		            <Button android:id="@+id/buttonC" android:layout_height="wrap_content" android:text="C" android:layout_width="wrap_content" android:layout_weight="0.2" android:background="@drawable/button_brown_selector" android:textColor="@color/button_text_color" android:layout_margin="5dip"></Button>
+		            <Button android:id="@+id/buttonD" android:layout_height="wrap_content" android:text="D" android:layout_width="wrap_content" android:layout_weight="0.2" android:background="@drawable/button_brown_selector" android:textColor="@color/button_text_color" android:layout_margin="5dip"></Button>
+		            <Button android:id="@+id/buttonSH" android:layout_height="wrap_content" android:text="#" android:layout_width="wrap_content" android:layout_weight="0.2" android:background="@drawable/button_brown_selector" android:textColor="@color/button_text_color" android:layout_margin="5dip"></Button>
+	            </LinearLayout>
+	            <LinearLayout android:id="@+id/linearLayout6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_weight="1">
+		            <Button android:id="@+id/buttonAS" android:layout_height="wrap_content" android:text="*" android:layout_width="wrap_content" android:background="@drawable/button_brown_selector" android:textColor="@color/button_text_color" android:layout_margin="5dip" android:layout_weight="0.8"></Button>
+					<Button android:layout_height="wrap_content" android:textColor="@color/button_text_color" android:layout_margin="5dip" android:background="@drawable/button_black" android:id="@+id/btnBack" android:text="Back" android:layout_width="wrap_content" android:layout_weight="0.4"></Button>
+	            </LinearLayout>	        
+	        </TableRow>
+	    </TableLayout>	    
+    </LinearLayout>
+
+
+
+</LinearLayout>

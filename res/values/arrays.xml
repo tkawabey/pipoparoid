@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="rec_file_long_click_menu">
+		<item>Play</item>
+		<item>Edit Title</item>
+		<item>Delete</item>
+		<item>Mail</item>
+		<item>Share</item>
+	</string-array>
+	<string-array name="stfm_modes">
+		<item>DTFM</item>
+		<item>Extend DTFM</item>
+	</string-array>
+</resources>
